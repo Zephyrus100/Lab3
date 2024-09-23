@@ -16,8 +16,7 @@ import org.json.JSONArray;
 public class JSONTranslator implements Translator {
 
     // TODO Task: pick appropriate instance variables for this class
-    private static String filename;
-    private static String country;
+    private static ArrayList<String> countries;
     private static ArrayList<String> languages;
 
     /**
@@ -42,7 +41,6 @@ public class JSONTranslator implements Translator {
 
             // TODO Task: use the data in the jsonArray to populate your instance variables
             //            Note: this will likely be one of the most substantial pieces of code you write in this lab.
-
         }
         catch (IOException | URISyntaxException ex) {
             throw new RuntimeException(ex);
@@ -53,6 +51,7 @@ public class JSONTranslator implements Translator {
     public List<String> getCountryLanguages(String country) {
         // TODO Task: return an appropriate list of language codes,
         //            but make sure there is no aliasing to a mutable object
+
         return new ArrayList<>();
     }
 

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 /**
  * An implementation of the Translator interface which reads in the translation
@@ -41,6 +42,10 @@ public class JSONTranslator implements Translator {
 
             // TODO Task: use the data in the jsonArray to populate your instance variables
             //            Note: this will likely be one of the most substantial pieces of code you write in this lab.
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                this.countries.add(jsonObject.getString("id");
+            }
         }
         catch (IOException | URISyntaxException ex) {
             throw new RuntimeException(ex);

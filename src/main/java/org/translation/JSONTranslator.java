@@ -16,6 +16,9 @@ import org.json.JSONArray;
 public class JSONTranslator implements Translator {
 
     // TODO Task: pick appropriate instance variables for this class
+    private static String filename;
+    private static String country;
+    private static ArrayList<String> languages;
 
     /**
      * Constructs a JSONTranslator using data from the sample.json resources file.
